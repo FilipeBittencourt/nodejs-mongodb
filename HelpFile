@@ -1,0 +1,11 @@
+abrir o terminal e digitar:
+
+npm init -y
+npm install express --save
+npm install -g nodemon
+
+EJS -> É uma engine de views que permite criação de paginas dinamicas em HTML enviando diretamente para o browser. 
+npm install ejs --save
+
+npm install -g tsd
+npm install eslint --save-dev
