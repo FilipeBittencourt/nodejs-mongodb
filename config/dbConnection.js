@@ -1,6 +1,7 @@
 const mysql = require('mysql');
 
-module.exports = function () {
+const connMySQL = function () {
+    //console.log('DB Connection');
     return mysql.createConnection({
         host: 'localhost',
         user: 'root',
@@ -9,5 +10,7 @@ module.exports = function () {
     });
 };
 
-
-
+module.exports = function () {
+    //console.log('No DB Connection');
+    return connMySQL;
+};
