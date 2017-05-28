@@ -5,19 +5,50 @@
     <meta charset="utf-8" />
     <title>Formulário de cadastro de Notícia</title>
 </head>
+<style>
+    table,
+    td {
+        border: 0px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        border-spacing: 5px;
+    }
+</style>
 
 <body>
 
     <h1>Adicionar notícia</h1>
     <form action="/noticias/salvar" method="post">
-        <label>Titulo</label>
-        <input type="text" id="titulo" name="titulo" placeholder="Titulo da notícia" />
-        <br />
-        <label>Notícias</label>
-        <textarea type="text" id="noticia" name="noticias" rows="5" cols="30"></textarea>
-        <br />
-        <input type="submit" value="enviar" />
+        <table>
+            <tr>
+                <td> <label>Titulo</label></td>
+                <td> <input type="text" id="titulo" name="titulo" placeholder="Titulo da notícia" /></td>
+            </tr>
+            <tr>
+                <td><label>Resumo</label></td>
+                <td><input type="text" id="resumo" name="resumo" placeholder="Resumo da notícia" /></td>
+            </tr>
+            <tr>
+                <td><label>Nome autor</label></td>
+                <td><input type="text" id="autor" name="autor" placeholder="Autor da notícia" /></td>
+            </tr>
+            <tr>
+                <td><label>Data dos fatos</label></td>
+                <td><input type="date" id="data_noticia" name="data_noticia" placeholder="Data da notícia" /></td>
+            </tr>
+            <tr>
+                <td><label>Notícias</label></td>
+                <td><textarea type="text" id="noticia" name="noticias" rows="5" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="enviar" /></td>
+            </tr>
+        </table>
         </from>
+
+
+
 
 </body>
 

@@ -5,23 +5,38 @@
     <meta charset="utf-8" />
     <title>Notícia</title>
 </head>
-
+<style>
+    table,
+    td {
+        border: 0px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        border-spacing: 5px;
+    }
+</style>
 <body>
 
     <h1>Notícia</h1>
-    <table>
+     <table>
         <tr>
             <td>ID</td>
             <td>Titulo</td>
             <td>Noticia</td>
         </tr>
-       
-            <tr>
-                <td><%= noticia[0].id %></td>
-                <td><%= noticia[0].titulo %></td>
-                <td><%= noticia[0].noticias %></td>
-            </tr>
-     
+
+        <tr>
+            <td>
+                <%= noticia[0].id %>
+            </td>
+            <td>
+                <%= noticia[0].titulo %>
+            </td>
+            <td>
+                <%= noticia[0].noticias %>
+            </td>
+        </tr>
+    </table>
+
 
 </body>
 
